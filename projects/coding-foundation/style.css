@@ -1,0 +1,15 @@
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: gold;
+
+
+}
+.flex-container > div {
+  background-color: teal;
+  color:indigo;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
