@@ -1,5 +1,5 @@
 function setup() {
-  let canvas = createCanvas(windowWidth,800);
+  let canvas = createCanvas(windowWidth,windowHeight);
 	canvas.id("p5-canvas");
 	canvas.parent("p5-canvas-container");
 	background(0);
