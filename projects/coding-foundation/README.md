@@ -1,1 +1,0 @@
-This is my coding foundation assignment completed. I was able to replicate what Professor Leon expected of us in the Github instructions. I also went a bit creative and added some color, numbering on the boxes, and a reset button.
