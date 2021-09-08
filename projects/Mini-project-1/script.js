@@ -6,7 +6,7 @@ range.addEventListener("change",function(){
   square_area.innerHTML="";
 
     let slider_value =range.value;
-    for(let i=0;i<slider_value+50;i++){
+    for(let i=0;i<slider_value;i++){
       let box = document.createElement("div")
 
 
@@ -16,7 +16,7 @@ range.addEventListener("change",function(){
       let g = Math.floor(Math.random() * 255);
       let b = Math.floor(Math.random() * 255);
       let m = Math.floor(Math.random() * 20);
-      console.log(r);
+
 
 
       box.appendChild(textnode);
@@ -24,6 +24,8 @@ range.addEventListener("change",function(){
       box.style.width = r+"px";
       box.style.height = b+"px";
       box.style.margin=m+"px";
+
+      document.body.style.backgroundColor="rgb("+r+","+g+","+b+")";
 
 
 
