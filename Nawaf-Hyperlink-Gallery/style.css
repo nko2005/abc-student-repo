@@ -20,7 +20,7 @@
       position: absolute;
 
       color: rgb(255, 255, 255);
-      left:17%;
+      left:13%;
       font-size: 20px;
       z-index: 1;
 
@@ -47,7 +47,7 @@
           position: absolute;
 
           color: rgb(255, 255, 255);
-          left:70%;
+          left:73%;
 
           font-size: 20px;
           font-style: Roboto;
@@ -58,7 +58,7 @@
         .project-table{
           z-index: 1;
           position:absolute;
-          left: 24%;
+          left: 25%;
           top:70%;
           width:50%;
           color: rgb(255, 255, 255);
