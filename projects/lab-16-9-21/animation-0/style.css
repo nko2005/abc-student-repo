@@ -1,0 +1,93 @@
+body{
+  background-color: teal;
+  margin: 0px;
+}
+
+.box{
+
+  width: 40px;
+  height:40px;
+  background-color: black;
+  margin :10px;
+
+}
+@keyframes spin {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+
+}
+.box-1{
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+}
+
+@keyframes shrink {
+  0%{
+    width:40px;
+    height:40px;
+  }
+  5%{
+    width:40px;
+    height:40px;
+  }
+  45%{
+    width:5px;
+    height:5px;
+  }
+  95%{
+    width:40px;
+    height:40px;
+  }
+
+}
+
+.box-2{
+  animation-name: shrink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leftright {
+  0%{
+    transform: translateX(0px);
+
+  }
+  10%{
+    transform: translateX(10px);
+
+  }
+  30%{
+    transform: translateX(300px);
+
+  }
+  32%{
+    transform: translateX(230px);
+
+  }
+  62%{
+    transform: translateX(600px)rotate(0deg);
+
+  }
+  72%{
+    transform: translateX(600px) rotate(360deg);
+
+  }
+  75%{
+    transform: translateX(40px);
+
+  }
+  95%{
+    transform: translateX(0px);
+
+  }
+
+
+}
+
+.box-3{
+  animation-name: leftright;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
