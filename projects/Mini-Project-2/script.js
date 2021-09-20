@@ -1,7 +1,7 @@
 
-console.log("test");
-let popupwidth = 200;
-let popupheight = 200;
+
+let popupwidth = 550;
+let popupheight = 250;
 
 let screenw = screen.width;
 let screenh= screen.height;
@@ -11,7 +11,7 @@ let y = Math.random()*(screenh-popupwidth);
 let specs = "width="+popupwidth+",height="+popupheight+",left="+x+",top="+y;
 
 let hourWindow= window.open("window-1/index.html","",specs);
-setTimeout(()=>{hourWindow.close();},5000);
+// setTimeout(()=>{hourWindow.close();},5000);
 
 
 
