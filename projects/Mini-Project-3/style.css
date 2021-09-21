@@ -1,0 +1,67 @@
+@keyframes Chase {
+
+  0%{
+    transform: translateX(10000px) translateY(0px) rotate(60deg);
+
+  }
+  10%{
+    transform: translateX(100px)  translateY(100px) rotate(60deg);
+
+  }
+  30%{
+    transform: translateX(40px) translateY(900px) rotate(60deg);
+
+  }
+  32%{
+    transform: translateX(230px) translateY(230px) rotate(60deg);
+
+  }
+  62%{
+    transform: translateX(600px) translateY(600px) rotate(0deg);
+
+  }
+  72%{
+    transform: translateX(900px)  translateY(300px) rotate(360deg);
+
+  }
+  75%{
+    transform: translateX(450px) translateY(40px) rotate(60deg);
+
+  }
+  95%{
+    transform: translateX(-210px);
+
+  }
+
+
+}
+
+@keyframes trollol {
+  0%{
+    transform: translateX(0px);
+  }
+
+  100%{
+    transform: translateX(100px);
+  }
+}
+
+#button{
+
+  position: relative;
+  animation-name: Chase;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  /* animation-timing-function: ease-in-out; */
+}
+
+#troll{
+
+  position: relative;
+  animation-name: trollol;
+  animation-duration: 5s;
+  animation-iteration-count:2;
+
+
+}
