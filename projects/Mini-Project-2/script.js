@@ -62,7 +62,7 @@ function clock(){
       document.body.style.backgroundImage= "url(images/night.jpg)";
 
   }
-  else if(d.getHours()>=24 && d.getHours()<5){
+  else if(d.getHours()>=24 || d.getHours()<5){
       document.body.style.backgroundImage= "url(images/midnight.jpg)";
 
   }

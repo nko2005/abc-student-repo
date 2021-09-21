@@ -8,7 +8,7 @@ function clock(){
   let hours = d.getHours();
 
   if(hours<10){
-      pic1.src="../images/"+minutes+".png";
+      pic1.src="../images/"+ hours+".png";
       pic2.src="data:,";
 
 
