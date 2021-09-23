@@ -1,6 +1,6 @@
 
-let popupwidth = 600;
-let popupheight = 250;
+let popupwidth = 700;
+let popupheight = 300;
 
 // let screenw = screen.width;
 // let screenh= screen.height;
