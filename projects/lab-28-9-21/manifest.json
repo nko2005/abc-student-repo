@@ -11,5 +11,8 @@
       "matches": ["<all_urls>"],
       "js": ["contentscript.js"]
     }
-  ]
+  ],
+  "browser_action": {
+    "default_icon":"tent.png"
+  }
 }
