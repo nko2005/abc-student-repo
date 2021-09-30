@@ -10,7 +10,7 @@ This project is an abstract and minimalist website that features puzzles for you
 
 ## Challenges & Shortcomings 2:
 
-This project took more time to properly research how to extract info from website visitors than expected; I mostly found enterprise solutions or solutions that require back-end coding. Moreover, I intended to use the geo API with a reverse geo api in order to get a user's country or even province, but I found some trouble in setting up the necessary google APIs, due to time constraints I just used the standard geo location API. Also, due to limited amount of tools and time I decided to cut the 4th puzzle as well.   
+This project took more time to properly research how to extract info from website visitors than expected; I mostly found enterprise solutions or solutions that require back-end coding. Moreover, I intended to use the geo API with a reverse geo API in order to get a user's country or even province, but I found some trouble in setting up the necessary google APIs, due to time constraints I just used the standard geo location API. Also, due to limited amount of tools and time I decided to cut the 4th puzzle as well.   
 
 
 ## Reflection 2:
