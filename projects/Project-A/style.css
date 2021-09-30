@@ -18,12 +18,14 @@
 
   position:absolute;
   top:50%;
+  font-size: 16px;
 }
 #page-2{
 
 
   position:absolute;
   left:49%;
+  font-size: 16px;
 }
 #page-3{
 
@@ -31,6 +33,7 @@
   position:absolute;
   top:50%;
   left: 97%;
+  font-size: 16px;
 }
 
 #image{
