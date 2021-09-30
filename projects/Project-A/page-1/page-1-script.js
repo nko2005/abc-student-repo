@@ -60,7 +60,7 @@ let clue1 = "LINES"
 document.querySelector('#find-me').addEventListener('click', geoFindMe);
 document.querySelector('#find-me-2').addEventListener('click', ()=>{
 
-
+//Geo API code was adapt from MDN Web Docs and modified.
  geoFindMe();
  for(let i=0;i<clue1.length;i++){
    // let random_x = Math.floor(Math.random() * 300) + 200;
