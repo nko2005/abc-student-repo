@@ -1,7 +1,4 @@
-body{
 
-  background-image: url("world-map.jpg");
-}
 
 .input-area{
 
@@ -14,4 +11,31 @@ body{
 
   position: absolute;
   left:95%;
+}
+
+#page-1{
+
+
+  position:absolute;
+  top:50%;
+}
+#page-2{
+
+
+  position:absolute;
+  left:49%;
+}
+#page-3{
+
+
+  position:absolute;
+  top:50%;
+  left: 97%;
+}
+
+#image{
+position:absolute;
+top:38%;
+left:45%;
+
 }

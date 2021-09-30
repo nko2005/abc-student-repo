@@ -11,7 +11,7 @@ console.log("extra" + navigator.userAgentData);
 console.log("os " + navigator.appVersion);
 
 console.log("device" + window.navigator.userAgent);
-
+*/
 let submit = document.getElementById("submit");
 let text_1 = document.getElementById("lat");
 let text_2 = document.getElementById("long");
@@ -73,7 +73,7 @@ document.querySelector('#find-me-2').addEventListener('click', ()=>{
    // div.style.width = random_x+"px";
    // div.style.height = random_y+"px";
    div.style.top = random_x+"%";
-   div.style.left =random_x+"%";
+   div.style.left =random_y+"%";
    div.style.background = "blue";
    div.style.color = "white";
    div.style.fontSize= 32+"px";
@@ -104,43 +104,3 @@ submit.addEventListener("click",()=>{
 
 
 });
-/*
-
-     const KEY = "AIzaSyBdbFJuSYodgUsF2F2wz7fdm56b97tkr50";
-     const LAT = 50.1;
-     const LNG = -97.3;
-     let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${LAT},${LNG}&key=${KEY}`;
-     fetch(url)
-       .then(response => response.json())
-       .then(data => {
-         console.log(data);
-         let parts = data.results[0].address_components;
-         document.body.insertAdjacentHTML(
-           "beforeend",
-           `<p>Formatted: ${data.results[0].formatted_address}</p>`
-         );
-         parts.forEach(part => {
-           if (part.types.includes("country")) {
-             //we found "country" inside the data.results[0].address_components[x].types array
-             document.body.insertAdjacentHTML(
-               "beforeend",
-               `<p>COUNTRY: ${part.long_name}</p>`
-             );
-           }
-           if (part.types.includes("administrative_area_level_1")) {
-             document.body.insertAdjacentHTML(
-               "beforeend",
-               `<p>PROVINCE: ${part.long_name}</p>`
-             );
-           }
-           if (part.types.includes("administrative_area_level_3")) {
-             document.body.insertAdjacentHTML(
-               "beforeend",
-               `<p>LEVEL 3: ${part.long_name}</p>`
-             );
-           }
-         });
-       })
-       .catch(err => console.warn(err.message));
-
-*/
