@@ -4,7 +4,7 @@ let input_2 = document.getElementById("input-2");
 
 let button= document.getElementById("submit");
 
-  for (let i =1; i<=48; i++){
+  for (let i =1; i<=42; i++){
     let box = document.createElement("div");
 
 
