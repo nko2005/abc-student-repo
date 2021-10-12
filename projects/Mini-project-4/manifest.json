@@ -1,7 +1,7 @@
 {
-    "name": "buggy extension",
+    "name": "Study Mode",
     "version": "1.0",
-    "description": "Replace words",
+    "description": "Enter the ultimate study environment",
     "manifest_version": 2,
     "permissions": [
       "activeTab"
