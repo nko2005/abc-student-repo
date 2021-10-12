@@ -4,8 +4,27 @@ function annoy(initiate){
    window.alert("Time is ticking...");
 
 
-  // document.body.innerHTML.style.backgroundColor= "blue";
+
+   let images = document.getElementsByTagName('img');
+   let p = document.getElementsByTagName("p");
+   for(let i = 0; i < images.length; i++){
+     images[i].src = "https://www.pngitem.com/pimgs/m/60-604270_clock-ticking-png-ticking-clock-png-transparent-png.png";
+
+   }
+
+   for(let k = 0; k < p.length; k++){
+     p[k].style.color = "red";
+
+   }
+
+
+
+
+
+
    window.open("https://www.youtube.com/watch?v=wPSWsz2R6Xc&t=10s", "_blank");
+   window.open("https://quizlet.com/latest", "_blank");
+   window.open("https://www.sparknotes.com/","_blank");
 
 
    //setTimeout(annoy,1000);
