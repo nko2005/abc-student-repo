@@ -22,9 +22,10 @@ function annoy(initiate){
 
 
 
-   window.open("https://www.youtube.com/watch?v=wPSWsz2R6Xc&t=10s", "_blank");
+
    window.open("https://quizlet.com/latest", "_blank");
    window.open("https://www.sparknotes.com/","_blank");
+   window.open("https://www.youtube.com/watch?v=wPSWsz2R6Xc&t=10s", "_blank");
 
 
    //setTimeout(annoy,1000);
