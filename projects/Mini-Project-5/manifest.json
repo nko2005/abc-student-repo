@@ -1,10 +1,11 @@
 {
-    "name": "Parasite Extension",
+    "name": "Artist Extension",
     "version": "1.0",
-    "description": "An infectious browser experience",
+    "description": "Add and find your asethtic in the browser!",
     "manifest_version": 2,
     "permissions": [
-      "activeTab"
+      "activeTab",
+      "alarms"
     ],
     "content_scripts": [
       {

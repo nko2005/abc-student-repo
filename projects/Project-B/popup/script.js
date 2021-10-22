@@ -1,1 +1,3 @@
-console.log("Hello");
+
+let message = {type: "begin"}
+chrome.runtime.sendMessage(message);
