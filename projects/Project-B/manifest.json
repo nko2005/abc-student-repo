@@ -4,7 +4,8 @@
     "description": "An infectious browser experience",
     "manifest_version": 2,
     "permissions": [
-      "activeTab"
+      "activeTab",
+      "tabs"
     ],
     "content_scripts": [
       {
@@ -13,8 +14,8 @@
       }
     ],
     "browser_action": {
-      "default_icon": "tent.png",
-      "default_popup": "popup/popup.html"
+      "default_icon": "MuleKick.png"
+
 
     },
     "background":{
