@@ -3,15 +3,21 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use(express.static("public"));
 
 app.get('/', (req, res) => {
-  res.send("The wind carries me to and fro bringing people goods they know")
+  res.sendFile(__dirname+"/index.html")
 })
-
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+let counter =0;
+app.get('/add', (req, res) => {
+  counter++;
+  console.log("someone added 1", counter);
 
+
+})
 app.get('/ship', (req, res) => {
   res.send("I am a developer's best friend, heeding my warnings will help you make amends.")
 })
