@@ -1,8 +1,8 @@
 console.log("hello world");
 const express = require('express')
 const app = express()
-const port = 3000
-//const port = process.env.PORT;
+// const port = 3000
+const port = process.env.PORT;
 const riddle1="ship";
 const riddle2="console";
 const riddle3="joker"
@@ -16,7 +16,7 @@ app.get('/riddle', (req, res) => {
   let query = req.query;
   let guess = query.word;
   console.log(query);
-  if(guess==riddle1){
+  if(guess.toLowerCase()==riddle1){
     res.redirect('/console/riddle-2.html');
   }
 })
@@ -28,7 +28,7 @@ app.get('/riddle2', (req, res) => {
   let query = req.query;
   let guess = query.word;
   console.log(query);
-  if(guess==riddle2){
+  if(guess.toLowerCase()==riddle2){
     res.redirect('/joker/riddle-3.html');
   }
 })
@@ -41,7 +41,7 @@ app.get('/riddle3', (req, res) => {
   let query = req.query;
   let guess = query.word;
   console.log(query);
-  if(guess==riddle3){
+  if(guess.toLowerCase()==riddle3){
     res.redirect('/mysteries/riddle-4.html');
   }
 })
@@ -53,7 +53,7 @@ app.get('/riddle4', (req, res) => {
   let query = req.query;
   let guess = query.word;
   console.log(query);
-  if(guess==riddle4 || guess =="mysteries"){
+  if(guess.toLowerCase()==riddle4 || guess.toLowerCase() =="mysteries"){
     res.redirect('/riddler');
   }
 })
