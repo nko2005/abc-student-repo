@@ -2,11 +2,14 @@ let socket = io("https://mirror-purrfect-mare.glitch.me");
 let others = [];
 let myId;
 let testMode = false;
+let total_users = 0;
 
 //receiveMyId
 socket.on('singleId', function(msg) {
-  console.log("My ID:", msg.value)
+  console.log("My ID:", msg.value, "the amount",msg.amount)
   myId = msg.value
+  total_users +=msg.amount;
+
 });
 // here I receive updated whenever someone disconnects or connects to the socket server.
 socket.on('updatedClients', function(msg) {
@@ -20,11 +23,11 @@ let allbutme = document.getElementById("allbutme");
 let randomSingle = document.getElementById("randomSingle");
 let buttonOutput = document.getElementById("buttonOutput");
 
-let sliderallbutme = document.getElementById("sliderallbutme");
+// let sliderallbutme = document.getElementById("sliderallbutme");
 let sliderall = document.getElementById("sliderall");
-let sliderrandomsingle = document.getElementById("sliderrandomsingle");
+// let sliderrandomsingle = document.getElementById("sliderrandomsingle");
 
-
+let sliderOutput = document.body;
 
 function buttonReceived(){
   buttonOutput.style.backgroundColor = "red";
@@ -34,6 +37,8 @@ function buttonReceived(){
 }
 
 function sliderReceived(){
+  sliderOutput.style.backgroundColor=""
+
 
 }
 
