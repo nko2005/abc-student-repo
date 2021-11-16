@@ -1,4 +1,4 @@
-let socket = io("https://vigorous-trusted-grip.glitch.me");
+let socket = io("https://mirror-purrfect-mare.glitch.me");
 let others = [];
 let myId;
 let testMode = true;
