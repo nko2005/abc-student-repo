@@ -6,15 +6,16 @@ let total_users = 0;
 
 //receiveMyId
 socket.on('singleId', function(msg) {
-  console.log("My ID:", msg.value, "the amount",msg.amount)
+  console.log("My ID:", msg.value, "the amount")
   myId = msg.value
-  total_users +=msg.amount;
+
 
 });
 // here I receive updated whenever someone disconnects or connects to the socket server.
 socket.on('updatedClients', function(msg) {
   console.log("updatedClients", msg)
   others = msg.value
+
 });
 
 
