@@ -35,7 +35,7 @@ socket.on("allData",(allData)=>{
 });
 
 socket.on("newDrawing",(datapoint)=>{
-  // console.log("from server on databse update", datapoint);
+  // console.log("from server on databse upd-ate", datapoint);
 
 
   let new_image = document.createElement("img");

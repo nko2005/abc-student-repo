@@ -119,7 +119,7 @@ io.on('connection', (socket) => {
 // note, i do this OUTSIDE of the above io.on("connection") bracket beacause
 // the stuff in there happens once for every user connected
 onChildAdded(drawingListRef, (data) => {
-  console.log("NEW DATAPOINT", data.val())
+  // console.log("NEW DATAPOINT", data.val())
   let datapoint = data.val();
   // console.log("from child", datapoint);
   io.emit("newDrawing", datapoint);
