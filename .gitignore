@@ -188,4 +188,7 @@ $RECYCLE.BIN/
 
 #Project C
 credentials-template.js
+credentials.js
+
+
 # End of https://www.gitignore.io/api/vim,osx,node,windows
