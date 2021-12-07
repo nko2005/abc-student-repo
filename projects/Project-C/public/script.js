@@ -39,7 +39,7 @@ diameter.innerHTML=slider.value;
 });
 
 function setup() {
-	let canvas = createCanvas(1200, 600);
+	let canvas = createCanvas(1000, 400);
   canvas.id("p5-canvas");
   canvas.parent("p5-canvas-container");
 	// canvas.focus();
@@ -61,7 +61,7 @@ function draw() {
 
 
 
-	
+
 
 
 
@@ -73,13 +73,17 @@ function draw() {
 		lines[i].show();
 	}
 
-	rect(200,-10,20,20)
-	rect(1000,-10,20,20)
+	rect(200,-8,10,10)
+	rect(800,-8,10,10)
 
-	rect(200,590,20,20)
-	rect(1000,590,20,20)
+	rect(200,398,10,10)
+	rect(800,398,10,10)
 
 }
+
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
 
 // document.onload = function() {
@@ -104,12 +108,14 @@ save_button.addEventListener("click",()=>{
 		user = name.value;
 	}
 
-	let time = d.getTime();
+	let time = d.toISOString().slice(0, 10)
 
 	let datapoint = {drawing:drawing, identity:user, timestamp: time }
 	console.log(datapoint);
 
 	socket.emit("newData",datapoint)
+
+	window.location.href='tower/towers.html';
 
 
 

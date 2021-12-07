@@ -7,16 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "type": "module",
   "author": "Nawaf",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "firebase": "^9.6.0",
     "firebase-admin": "^10.0.0",
     "socket.io": "^4.4.0"
-  },
-  "devDependencies": {
-    "@babel/helper-compilation-targets": "^7.16.3"
   }
 }

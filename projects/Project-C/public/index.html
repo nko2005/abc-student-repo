@@ -20,12 +20,28 @@
     <div id="buttonOutput">
 
     </div> -->
-    <div class = "mega-wrapper">
+    <!-- <div class = "mega-wrapper"> -->
+    <div class = "header">
       <h1> Kaleido Tower </h1>
-      <div class = "wrapper">
+    </div>
+    <div class="row">
 
+        <div class = "guide">
         <img id="tester" src="guide.png" width = "240" height = "200">
+        <ul>
+            <li>If you would like to erase, use the white brush color.
+</li><br>
+            <li>Try to draw your floor within the defined rectangles so your floor can connect with others!</li>
+
+            </ul>
+
+
+      </div>
+      <div class = "col-2 right">
         <div id = "p5-canvas-container"></div>
+      </div>
+
+      <div class = "col-1 ">
         <div id = "brush-options">
           <div id = "colors">
             Brush Color: <input type="color" id="color-picker" name = "Brush Color">
@@ -33,15 +49,16 @@
           <div id = "size">
           Brush Size: <input id="brush-size" type="range" min="1" max="100" value="15">    <span id ="diameter"> 15</span>   px
           </div>
+        </div>
 
-          <input type ="text" id="name" placeholder="name" autocomplete="off"><button type="button" id="button" name="button">  <a href = "tower/towers.html">Submit</a> </button>
+          <input type ="text" id="name" placeholder="name" autocomplete="off"><button type="button" id="button" name="button"> Submit </button>
 
 
 
       </div>
 
-        <div>
     </div>
+    <!-- </div> -->
 
 
     <script src="script.js"></script>
