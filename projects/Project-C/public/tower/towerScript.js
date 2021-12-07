@@ -25,9 +25,9 @@ socket.on("allData",(allData)=>{
       let div_tag = document.createElement("div");
       div_tag.innerHTML= "By: " + info + " " + "on " + theTimeStamp;
 
-      console.log(div_tag);
-      div_tag.style.marginTop="95px";
-      div_tag.style.marginBottom="95px";
+      // console.log(div_tag);
+      div_tag.style.marginTop="100px";
+      div_tag.style.marginBottom="100px";
 
 
     info_container.appendChild(div_tag);
@@ -66,11 +66,11 @@ socket.on("newDrawing",(datapoint)=>{
   let newtheTimeStamp = datapoint.timestamp;
 
   let newdiv_tag = document.createElement("div");
-  newdiv_tag.innerHTML=newinfo + " " +newtheTimeStamp;
+  newdiv_tag.innerHTML="By: " + info + " " + "on " + theTimeStamp;
 
 
-  newdiv_tag.style.marginTop="95px";
-  newdiv_tag.style.marginBottom="95px";
+  newdiv_tag.style.marginTop="100px";
+  newdiv_tag.style.marginBottom="100px";
   newdiv_tag.appendChild(info_container);
 
 
