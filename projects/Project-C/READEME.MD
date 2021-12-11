@@ -1,6 +1,6 @@
 
 
-
+![Website screenshot](Demo.gif)
 ## Description:
 
 Welcome to the Kaleido Tower an internet project in the making. It is a space where people contribute to a tower with infinite amount of floors. Anyone can access the website, draw their own horitzontal slice of the tower (using the provided drawing tools) and add it on top. Users can also add their name to be displayed with their created floor.
